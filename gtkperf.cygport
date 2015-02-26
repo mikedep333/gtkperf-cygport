@@ -1,0 +1,18 @@
+NAME="gtkperf"
+VERSION=0.40
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="GTK+ performance test"
+DESCRIPTION="GtkPerf is an application designed to test GTK+ performance. The point
+is to create common testing platform to run predefined GTK+ widgets
+and this way define the speed of device/platform."
+DEPEND="libatk1.0-devel libgtk2.0-devel"
+
+SRC_URI=http://downloads.sourceforge.net/gtkperf/gtkperf_0.40.tar.gz
+SRC_DIR="gtkperf"
+PATCH_URI="
+	format-security-gtkperf.patch
+	cygwin-mkinstalldirs-gtkperf.patch
+"
+
+NO_AUTOPOINT=1

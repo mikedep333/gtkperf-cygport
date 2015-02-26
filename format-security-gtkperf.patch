@@ -1,0 +1,28 @@
+diff -uNrp a/src/timing.c b/src/timing.c
+--- a/src/timing.c	2005-06-07 09:25:38.000000000 -0700
++++ b/src/timing.c	2013-12-04 15:35:55.481172999 -0800
+@@ -97,7 +97,7 @@ add_test_info_time (AppData * appdata)
+ 	gtk_text_buffer_insert (appdata->textview_info_buffer, &iter,
+ 				timestring, -1);
+ 
+-	g_printf (timestring);
++	g_printf ("%s", timestring);
+ 
+ }
+ 
+@@ -129,7 +129,7 @@ add_test_info_end (AppData * appdata)
+ 	gtk_statusbar_push (GTK_STATUSBAR (appdata->statusbar_main), 0,
+ 			    " Test Finished");
+ 
+-	g_printf (timestring);
++	g_printf ("%s", timestring);
+ 
+ }
+ 
+@@ -154,5 +154,5 @@ add_test_info_start (AppData * appdata)
+ 	gtk_statusbar_push (GTK_STATUSBAR (appdata->statusbar_main), 0,
+ 			    " Running tests...");
+ 
+-	g_printf (timestring);
++	g_printf ("%s", timestring);
+ }
