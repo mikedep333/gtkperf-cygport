@@ -6,7 +6,7 @@ SUMMARY="GTK+ performance test"
 DESCRIPTION="GtkPerf is an application designed to test GTK+ performance. The point
 is to create common testing platform to run predefined GTK+ widgets
 and this way define the speed of device/platform."
-DEPEND="libatk1.0-devel libgtk2.0-devel"
+DEPEND="libatk1.0-devel libgtk2.0-devel gettext-devel"
 
 SRC_URI=http://downloads.sourceforge.net/gtkperf/gtkperf_0.40.tar.gz
 SRC_DIR="gtkperf"
@@ -15,4 +15,6 @@ PATCH_URI="
 	cygwin-mkinstalldirs-gtkperf.patch
 "
 
+# Even though we set this, gettext-devel is still needed to build.
+# Otherwise, cygport fails to compile because it cannot find autopoint.
 NO_AUTOPOINT=1
