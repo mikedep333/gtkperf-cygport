@@ -6,7 +6,7 @@ SUMMARY="GTK+ performance test"
 DESCRIPTION="GtkPerf is an application designed to test GTK+ performance. The point
 is to create common testing platform to run predefined GTK+ widgets
 and this way define the speed of device/platform."
-DEPEND="libatk1.0-devel libgtk2.0-devel gettext-devel"
+DEPEND="libatk1.0-devel libgtk2.0-devel gettext-devel pkg-config"
 
 SRC_URI=http://downloads.sourceforge.net/gtkperf/gtkperf_0.40.tar.gz
 SRC_DIR="gtkperf"
