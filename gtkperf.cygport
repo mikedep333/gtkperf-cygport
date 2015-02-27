@@ -7,6 +7,11 @@ DESCRIPTION="GtkPerf is an application designed to test GTK+ performance. The po
 is to create common testing platform to run predefined GTK+ widgets
 and this way define the speed of device/platform."
 DEPEND="libatk1.0-devel libgtk2.0-devel gettext-devel pkg-config"
+# We need to install a font in order for gtkperf to work at all,
+# especially wth X servers other than Cygwin XWin.
+# We also want to use a consistent font because this is a benchmark.
+# This one appears to be the highest match of all the Cygwin fonts.
+REQUIRES="font-adobe-dpi75"
 
 SRC_URI=http://downloads.sourceforge.net/gtkperf/gtkperf_0.40.tar.gz
 SRC_DIR="gtkperf"
