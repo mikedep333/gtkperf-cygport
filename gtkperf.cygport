@@ -13,7 +13,8 @@ DEPEND="libatk1.0-devel libgtk2.0-devel gettext-devel pkg-config"
 # This one appears to be the highest match of all the Cygwin fonts.
 REQUIRES="font-adobe-dpi75"
 
-SRC_URI=http://downloads.sourceforge.net/gtkperf/gtkperf_0.40.tar.gz
+HOMEPAGE="http://gtkperf.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gtkperf/gtkperf_${VERSION}.tar.gz"
 SRC_DIR="gtkperf"
 PATCH_URI="
 	format-security-gtkperf.patch
