@@ -7,3 +7,11 @@ Desktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
+
+# Downloaded source tarball
+gtkperf_0.40.tar.gz
+gtkperf_0.40.tar.gz.tmp
+
+# Cygport build directory
+gtkperf-0.40-1.x86_64
+gtkperf-0.40-1.i686
