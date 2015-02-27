@@ -21,6 +21,10 @@ PATCH_URI="
 	cygwin-mkinstalldirs-gtkperf.patch
 "
 
+# gtkperf 0.40 was written with a very old version of autotools.
+# Without this line, make fails with this error under po/:
+# make[2]: *** No rule to make target 'Makevars', needed by 'Makefile'.  Stop.
+#
 # Even though we set this, gettext-devel is still needed to build.
 # Otherwise, cygport fails to compile because it cannot find autopoint.
 NO_AUTOPOINT=1
